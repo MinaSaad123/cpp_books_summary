@@ -1,8 +1,8 @@
 # Item 3: Use const whenver possible
 
 > [!NOTE]
-it’s never legal to modify the return value of a function
-that returns a built-in type.
+**it’s never legal to modify the return value of a function
+that returns a built-in type.**
 
 **There are two prevailing notions: bitwise
 constness (also known as physical constness) and logical constness**
@@ -98,17 +98,17 @@ STL iterators are modeled on pointers, so an iterator acts much like a
 2. `std::vector<int>::const_iterator cIter` is analogue of a` const T* pointer`.
 ---
 > [!NOTE]
-const is a wonderful thing. On
+**const is a wonderful thing. On
 pointers and iterators; on the objects referred to by pointers, iterators, and references; on function parameters and return types; on local
 variables; and on member functions, const is a powerful ally. Use it
-whenever you can. You’ll be glad you did.
+whenever you can. You’ll be glad you did.**
 
-> [!NOTE] Things to remember
-* **Declaring something const helps compilers detect usage errors. const can be applied to objects at any scope, to function parameters and
-return types, and to member functions as a whole.**
-* **Compilers enforce bitwise constness, but you should program using
-logical constness**.
-*  **When const and non-const member functions have essentially identical
+## NOTES
+* *Declaring something const helps compilers detect usage errors. const can be applied to objects at any scope, to function parameters and
+return types, and to member functions as a whole.*
+* *Compilers enforce bitwise constness, but you should program using
+logical constness*.
+*  *When const and non-const member functions have essentially identical
 implementations, code duplication can be avoided by having the
-non-const version call the const version.**
+non-const version call the const version.*
 
